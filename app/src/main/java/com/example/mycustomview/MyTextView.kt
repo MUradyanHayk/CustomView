@@ -22,7 +22,7 @@ class MyTextView(context: Context) : View(context) {
     override fun onMeasure(widthMeasureSpec: Int, heightMeasureSpec: Int) {
         firstItem?.measure(widthMeasureSpec, heightMeasureSpec)
         secondItem?.measure(widthMeasureSpec, heightMeasureSpec)
-        setMeasuredDimension(widthMeasureSpec, height)
+        setMeasuredDimension(widthMeasureSpec, heightMeasureSpec)
     }
 
     override fun onLayout(changed: Boolean, left: Int, top: Int, right: Int, bottom: Int) {
